@@ -21,13 +21,6 @@ body {
   align-items: center;
 }
 
-.container-footer {
-  width: 1200px;
-  margin: auto auto;
-  align-items: center;
-  background-color: #23272a;
-}
-
 .big-container {
   height: 100px;
   background-color: #255ee9;
@@ -93,7 +86,7 @@ main > div.bg:nth-child(even) {
   flex-wrap: wrap;
 }
 .debug {
-  border: 2px dashed black;
+  border: 2px dashed rgb(0, 0, 0);
 }
 .debug-white {
   border: 2px dashed white;
@@ -103,10 +96,6 @@ main > div.bg:nth-child(even) {
   display: flex;
 }
 
-.login {
-  width: 20%;
-  justify-content: end;
-}
 < .logo {
   width: 20%;
 }
@@ -151,24 +140,17 @@ main > div.bg:nth-child(even) {
 }
 
 .card-aqua {
-  background-color: #20b2aa;
-  flex-grow: 1;
+  width: calc(100% / 4);
 }
 .card-red {
-  background-color: #f08080;
-  flex-grow: 2;
+  width: 45%;
 }
 
 .card {
-  height: 500px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.card.card-red,
-.card.card-aqua {
-  margin-top: 20px;
-}
 img:not(.logo) {
   width: 100%;
 }
@@ -178,24 +160,12 @@ img:not(.logo) {
   color: #23272a;
 }
 
-.background-footer {
-  background-color: #23272a;
-  border-bottom: 3px solid white;
-}
 .end {
-  height: 100px;
+  height: 80px;
   width: 100%;
   margin-top: 20px;
-  background-color: #7fffd4;
   justify-content: space-between;
   align-items: center;
-}
-
-input,
-.end > .logo {
-  background-color: wheat;
-  width: 60px;
-  height: 30px;
 }
 
 a {
@@ -217,7 +187,58 @@ a {
   justify-content: center;
 }
 
-.card-green > .button {
+.card-green > .button,
+.end > .button {
   color: white;
   background-color: #8ea1e1;
+}
+
+/* 
+                  # FOOTER
+                */
+.container-footer {
+  width: 1200px;
+  margin: auto auto;
+  background-color: #23272a;
+}
+.background-footer {
+  background-color: #23272a;
+  border-bottom: 2px solid #48557e;
+  color: #7289da;
+}
+/* 
+  FIRST COLUMN (TITOLO + ICON)
+*/
+.ita > img {
+  width: 2rem;
+  margin-right: 5px;
+}
+
+.ita {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.icon {
+  max-width: 50%;
+  justify-content: space-between;
+}
+/* 
+  COLONNA - PRODOTTO-COMPAGNIA-RISORSE-NORME
+*/
+.card {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card > div > ul > li {
+  padding: 0;
+}
+/* 
+    FOOTER CON LOGO-BUTTON
+*/
+.login {
+  width: 20%;
+  justify-content: end;
+}
+.card-red > .title {
+  margin-bottom: 20px;
 }
