@@ -7,10 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-weight: 700;
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 
 .container {
@@ -27,8 +29,8 @@ body {
 }
 
 .big-container {
-  height: 60px;
-  background-color: #3161e0;
+  height: 100px;
+  background-color: #255ee9;
   justify-content: space-between;
 }
 
@@ -46,26 +48,36 @@ main > div.bg:nth-child(even) {
   background-color: #d3d3d3;
 }
 
-.direction {
+.row-reverse {
   flex-direction: row-reverse;
 }
 
 /* 
-    IMG - BG
+   JUMBOTRON
 */
 
 .jumbotron {
-  background-color: #00008b;
-  padding: 2rem;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
   justify-content: center;
   align-items: center;
 }
 
-.debug.box-pink {
+.debug.box-titolo {
   border-radius: 10px;
+  background-color: #ee82ee;
+}
+.box-titolo > * {
+  padding: 2rem;
+}
+
+.box-titolo {
   width: 800px;
   height: 400px;
-  background-color: #ee82ee;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* 
@@ -92,6 +104,20 @@ main > div.bg:nth-child(even) {
 
 .logo {
   width: 20%;
+}
+
+/* 
+  BUTTON
+*/
+.p-button {
+  justify-content: center;
+}
+.button {
+  margin: 0px 20px;
+  padding: 10px 25px;
+  color: black;
+  background-color: white;
+  border-radius: 100px;
 }
 /* 
     CARD
