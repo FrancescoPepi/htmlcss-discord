@@ -36,7 +36,9 @@ ul {
   width: 100%;
   justify-content: center;
 }
-
+li:hover {
+  text-decoration: underline;
+}
 main > div.bg:nth-child(even) {
   background-color: #f6f6f6;
 }
@@ -221,6 +223,14 @@ a {
 .icon {
   max-width: 50%;
   justify-content: space-between;
+}
+.icon > div > i:hover,
+a:hover {
+  color: #7289da !important;
+}
+.button:hover {
+  filter: invert(85%);
+  box-shadow: 2px 2px 2px;
 }
 /* 
   COLONNA - PRODOTTO-COMPAGNIA-RISORSE-NORME
