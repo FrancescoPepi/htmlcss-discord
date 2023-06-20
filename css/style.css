@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+}
 
 .container {
   width: 1200px;
@@ -23,20 +28,12 @@
 
 .big-container {
   height: 60px;
-  background-color: #add8e6;
+  background-color: #3161e0;
   justify-content: space-between;
 }
 
-.logo,
-.login,
 li {
-  padding: 10px;
-}
-
-.logo,
-.login,
-ul {
-  background-color: #daa520;
+  padding: 0px 25px;
 }
 
 ul {
@@ -57,14 +54,14 @@ main > div.bg:nth-child(even) {
     IMG - BG
 */
 
-.img-bg {
+.jumbotron {
   background-color: #00008b;
-  height: 500px;
+  padding: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.box-pink {
+.debug.box-pink {
   border-radius: 10px;
   width: 800px;
   height: 400px;
@@ -157,6 +154,5 @@ input,
 
 a {
   text-decoration: none;
-  color: #1e90ff;
-  font-weight: 900;
+  color: white;
 }
