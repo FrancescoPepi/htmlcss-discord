@@ -45,10 +45,14 @@ ul {
 }
 
 main > div.bg:nth-child(even) {
-  background-color: #d3d3d3;
+  background-color: #f6f6f6;
+  /* background-image: url(../img/wave.svg);
+  background-size: 2500px 200px;
+  background-repeat: no-repeat;
+  background-position: bottom; */
 }
 
-.row-reverse {
+.flex.row-reverse {
   flex-direction: row-reverse;
 }
 
@@ -80,9 +84,15 @@ main > div.bg:nth-child(even) {
   text-align: center;
 }
 
+.p-button > .button:last-child {
+  background-color: #23272a;
+  color: white;
+}
+
 /* 
     UTILITIS
 */
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -101,8 +111,7 @@ main > div.bg:nth-child(even) {
   width: 20%;
   justify-content: end;
 }
-
-.logo {
+< .logo {
   width: 20%;
 }
 
@@ -123,13 +132,26 @@ main > div.bg:nth-child(even) {
     CARD
 */
 
+.card-pink > * {
+  padding: 20px;
+  color: #23272a;
+}
+.title {
+  font-size: 2rem;
+  line-height: 50px;
+}
 .card-blue {
-  background-color: #1e90ff;
-  flex-grow: 2;
+  width: 70%;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
 }
 .card-pink {
-  background-color: #ffc0cb;
-  flex-grow: 1;
+  width: 30%;
 }
 
 .card-aqua {
@@ -151,11 +173,13 @@ main > div.bg:nth-child(even) {
 .card.card-aqua {
   margin-top: 20px;
 }
-
-.card-green {
-  background-color: #228b22;
+img {
   width: 100%;
-  height: 700px;
+}
+.card-green {
+  height: 1200px;
+  text-align: center;
+  color: #23272a;
 }
 
 .background-footer {
@@ -181,4 +205,23 @@ input,
 a {
   text-decoration: none;
   color: white;
+}
+
+.card-green > .title > h2 {
+  padding-bottom: 20px;
+}
+
+.star {
+  height: 80px;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-position: top;
+  margin: auto 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-green > .button {
+  color: white;
+  background-color: #8ea1e1;
 }
