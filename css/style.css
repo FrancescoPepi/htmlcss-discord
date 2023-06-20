@@ -46,10 +46,6 @@ ul {
 
 main > div.bg:nth-child(even) {
   background-color: #f6f6f6;
-  /* background-image: url(../img/wave.svg);
-  background-size: 2500px 200px;
-  background-repeat: no-repeat;
-  background-position: bottom; */
 }
 
 .flex.row-reverse {
@@ -173,7 +169,7 @@ main > div.bg:nth-child(even) {
 .card.card-aqua {
   margin-top: 20px;
 }
-img {
+img:not(.logo) {
   width: 100%;
 }
 .card-green {
