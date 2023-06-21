@@ -21,7 +21,7 @@ body {
   align-items: center;
 }
 
-.big-container {
+.header-container {
   height: 100px;
   background-color: #255ee9;
   justify-content: space-between;
@@ -39,8 +39,8 @@ ul {
 li:hover {
   text-decoration: underline;
 }
-main > div.bg:nth-child(even) {
-  background-color: #f6f6f6;
+.bg-grey {
+  background-color: #e7e4e4;
 }
 
 .flex.row-reverse {
@@ -116,8 +116,15 @@ main > div.bg:nth-child(even) {
   border-radius: 100px;
 }
 /* 
-    CARD
+    CARD-section
 */
+.wave {
+  color: #e7e4e4;
+  display: block;
+}
+.upside-down {
+  transform: rotate(180deg);
+}
 
 .card-pink > * {
   padding: 20px;
@@ -156,11 +163,6 @@ main > div.bg:nth-child(even) {
 img:not(.logo) {
   width: 100%;
 }
-.card-green {
-  height: 1200px;
-  text-align: center;
-  color: #23272a;
-}
 
 .end {
   height: 80px;
@@ -168,6 +170,12 @@ img:not(.logo) {
   margin-top: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.big-container {
+  color: #23272a;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 a {
@@ -189,7 +197,7 @@ a {
   justify-content: center;
 }
 
-.card-green > .button,
+.big-container > .button,
 .end > .button {
   color: white;
   background-color: #8ea1e1;
